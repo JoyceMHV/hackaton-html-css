@@ -1,0 +1,309 @@
+/* ALGEMEEN*/
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: whitesmoke;
+    color: darkolivegreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;  
+}
+
+/*GRID*/
+.container {  
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr auto 1fr;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";   
+}
+
+.site-main-container {  
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "mA mA mA mA mA mA mA mA mA mA mA mA" 
+    "mB mB mB mB mB mB mB mB mB mB mB mB" 
+    "mC mC mC mC mC mC mC mC mC mC mC mC" 
+    "mD mD mD mD mD mD mD mD mD mD mD mD"
+    "mE mE mE mE mE mE mE mE mE mE mE mE";   
+}
+
+.site-header {
+    grid-area: h;
+}
+
+.site-main{
+    grid-area: m;
+}
+
+.site-main-A{
+    grid-area: mA;
+}
+
+.site-main-B {
+    grid-area: mB;
+}
+
+.site-main-C {
+    grid-area: mC;
+}
+
+.site-main-D {
+    grid-area: mD;
+}
+
+.site-main-E {
+    grid-area: mE;
+}
+
+.site-footer {
+    grid-area: f;
+}
+
+
+/*HEADER*/
+.site-header { 
+    background-color: darkolivegreen;
+    height: 100px;
+    position: relative;
+}
+
+header nav { 
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+}
+
+header ul {
+    list-style: none;
+}
+
+header li { 
+    display: inline;  
+    padding: 10px;
+}
+
+header li a { 
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+header li a:hover {
+    border: 1px solid whitesmoke;
+    padding: 5px;
+}
+
+.current-page { 
+    border: 1px solid whitesmoke;
+    padding: 5px;
+}
+
+/*MAIN*/
+.top-image {
+    width:100%; 
+}
+
+.site-main p { 
+    color: darkslategrey;
+    margin: 15px 15px 15px 40px;
+}
+
+h1 { 
+    text-align: center;
+    margin: 30px 0px;
+}
+
+h2 { 
+    text-align: center;
+    margin: 15px;
+}
+
+h3 { 
+    text-align: center;
+}
+
+hr {
+    border: 1px solid lightgray;
+    margin: 45px;
+}
+
+button { 
+    background-color: darkolivegreen;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+}
+
+button a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.main-image1 {
+    width: 40%;
+    height: auto;
+    border-radius: 100%;
+    border: 3px solid darkolivegreen;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-image2 {
+    width: 40%;
+    display: block;
+    border: 3px solid darkolivegreen;
+    margin: 5px auto;
+}
+.main-image3 { 
+    display: none;
+}
+
+.main-image4 { 
+    width: 200px ;
+    padding: 3px;
+}
+
+.multiple-images {
+    display: flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lots-of-images { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+video {  
+    height: 50%;
+    width: 50%;
+    border: 3px solid darkolivegreen;
+}
+
+div.center {    
+    text-align: center;
+}
+
+.home-video {
+    width: 300px;
+}
+
+.form {
+    background-image: url("images/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.form div { 
+    margin: 20px;
+    color: whitesmoke;
+}
+.form-item {
+    width: 90%;
+    border: none;
+    font-size: 18px;
+}
+
+.formbutton { 
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+}
+
+/*FOOTER*/
+.site-footer { 
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-footer p {
+    margin-top: 15px;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 768px){
+    header li a {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+    body {
+        font-size: 20px;
+        background-image: url("images/background-smaller.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;  
+    }
+
+    .site-main-container { 
+        grid-template-areas: 
+        "mA mA mA mA mA mA mA mA mA mA mA mA" 
+        "mB mB mB mB mB mB mB mB mB mB mB mB" 
+        "mC mC mC mC mD mD mD mD mE mE mE mE" 
+        "mC mC mC mC mD mD mD mD mE mE mE mE" 
+        "mC mC mC mC mD mD mD mD mE mE mE mE";  
+    }
+    hr, .top-image, .main-image1, .multiple-images  {
+        display: none;
+    }
+
+
+    .site-main {
+        max-width: 1200px;
+        background-color: rgba(255,255,255, 0.8);
+        display: block;
+        margin: 200px auto;
+    }
+    
+    button { 
+        margin: 10px;
+    }
+
+    .main-image2 {
+        width: 75%;
+    }
+
+    .main-image3 { 
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        border: 3px solid darkolivegreen;
+        border-radius: 100%;
+    }
+
+    .form {
+        background-image: none;
+    }
+
+    .form div {
+        color: darkslategrey;
+        font-weight: 700;
+    }
+    
+}
+@media only screen and (min-width: 1450px) {
+    header li a {
+        font-size: 26px;
+    }
+}

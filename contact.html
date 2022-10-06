@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Manóu</title>
+        <link rel="stylesheet" href="styles.css"  type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="site-header">
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" target="_self">Home</a></li>
+                            <li><a href="het-ras.html" target="_self">Het ras</a></li>
+                            <li><a href="van-0-tot-nu.html" target="_self">Van 0 tot nu</a></li>
+                            <li><a href="galerij.html" target="_self">Galerij</a></li>
+                            <li><a class="current-page" href="contact.html" target="_self">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            
+            <div class="site-main"> 
+                <main>     
+                    <div>
+                        <img class="top-image" src="images/background.jpg">
+                        <h1>Contact</h1>
+                        <p>Manóu vindt het heerlijk om te spelen, te knuffelen en kunstjes te doen. Met mensen, kinderen, honden, eigenlijk alles en iedereen. Zij is tevens geschikt voor kinderen en volwassenen die angstig zijn, omdat zij heel rustig is en echte <i>hulphondgenen</i> heeft. Manóu is ook erg goed in het geven van troost en komt desgewenst thuis bij eenzame mensen, senioren of in verzorgingstehuizen.</p>                     
+                        <p>Neem gerust contact met mij op via het contactformulier of mail naar <a href="mailto:joyceverhoef@hotmail.com">joyceverhoef@hotmail.com</a>.</p>
+                        <h2> Contactformulier</h2>
+                    </div>
+
+                    <div class="form">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div>
+                                <label for="name">Naam</label><br>
+                                <input class="form-item" type="text" id="name" name="name" required/>
+                            </div>
+                            <div>
+                                <label for="email">Email</label><br>
+                                <input class="form-item" type="email" id="email" name="email" required/>
+                            </div>
+                            <div>
+                                <label for="phone">Telefoonnummer</label><br>
+                                <input class="form-item" type="tel" id="phone" name="phone"/>
+                            </div>
+                            <div>
+                                <label for="date">Datum gewenste afspraak</label><br>
+                                <input class="form-item" type="date" id="date" name="date"/>
+                            </div>
+                            <div>
+                                <label>Zijn er hond(en) aanwezig?</label><br>
+                                <input type="radio" id="ja" name="met/zonder hond" value="met hond"/><label for="ja"> Ja</label><br>
+                                <input type="radio" id="nee" name="met/zonder hond" value="zonder hond"/><label for="nee"> Nee</label><br>
+                            </div>
+                            <div>                            
+                                <label for="textarea">Opmerking of vraag</label><br>
+                                <textarea class="form-item" rows="5" cols="35" id="textarea" name="textarea"></textarea>
+                            </div>
+                            <div> 
+                                <input class="formbutton" type="submit"/>
+                            </div>
+                        </form>                        
+                    </div>
+                </main>
+            </div>
+            <div class="site-footer">
+                <footer>
+                    <p> © Homemade by Joyce & Manóu</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
