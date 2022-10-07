@@ -8,7 +8,7 @@ body{
     background-color: whitesmoke;
     color: darkolivegreen;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;  
+    font-size: 20px;  
 }
 
 /*GRID*/
@@ -117,7 +117,13 @@ header li a:hover {
 
 .site-main p { 
     color: darkslategrey;
-    margin: 15px 15px 15px 40px;
+    margin: 15px 15px 15px 20px;
+}
+
+.site-main a {
+    color: darkslategrey;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 h1 { 
@@ -137,18 +143,6 @@ h3 {
 hr {
     border: 1px solid lightgray;
     margin: 45px;
-}
-
-button { 
-    background-color: darkolivegreen;
-    font-size: 18px;
-    border: none;
-    padding: 10px;
-}
-
-button a {
-    color: whitesmoke;
-    text-decoration: none;
 }
 
 .main-image1 {
@@ -192,14 +186,28 @@ video {
     height: 50%;
     width: 50%;
     border: 3px solid darkolivegreen;
+    margin: 0px 5px;
+}
+
+.home-video {
+    max-width: 300px;
 }
 
 div.center {    
     text-align: center;
 }
 
-.home-video {
-    width: 300px;
+div.center button { 
+    background-color: darkolivegreen;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+}
+
+div.center a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 .form {
@@ -246,6 +254,20 @@ div.center {
     }
 }
 
+video {  
+   width: auto;
+   height: 200px;
+}
+
+.home-video {
+    height: auto;
+}
+
+.multiple-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 @media only screen and (min-width: 1200px){
     body {
